@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habit Tracker - Options</title>
+</head>
+<body>
+  <form id="habit-form">
+    <input type="text" name="habitName" placeholder="Habit Name" required>
+    <textarea name="habitDescription" placeholder="Description"></textarea>
+    <select name="frequency" required>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+    <input type="number" name="targetCount" placeholder="Target Count" required>
+    <button type="submit">Add Habit</button>
+  </form>
+
+  <div id="habit-list"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
