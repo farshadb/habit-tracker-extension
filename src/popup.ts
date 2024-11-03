@@ -3,8 +3,8 @@ import { habitDB } from './services/DatabaseService';
 import { format } from 'date-fns';
 
 class HabitTrackerPopup {
-  private habitList: HTMLElement;
-  private addHabitButton: HTMLButtonElement;
+  private habitList!: HTMLElement;
+  private addHabitButton!: HTMLButtonElement;
 
   constructor() {
     this.habitList = document.getElementById('habit-list')!;

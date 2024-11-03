@@ -12,6 +12,15 @@ export class HabitDatabase extends Dexie {
       habitEntries: '++id, habitId, date, completed'
     });
   }
+
+   async addHabit(habit: Habit): Promise<void> {
+    try {
+      await this.habits.add(habit);
+      console.log('Habit added successfully:', habit);
+    } catch (error) {
+      console.error('Failed to add habit:', error);
+    }
+  }
 }
 
 export const habitDB = new HabitDatabase();
